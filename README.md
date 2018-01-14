@@ -1,3 +1,30 @@
+Updated 14-01-2018
+
+The main floodlight has been originally cloned from :
+
+The common error encountered with the actual cloned files were the following :
+
+ERROR [n.f.core.Main] Exception in main
+net.floodlightcontroller.core.module.FloodlightModuleException: Module net.floodlightcontroller.mactracker.MACTracker not found
+	at net.floodlightcontroller.core.module.FloodlightModuleLoader.traverseDeps(FloodlightModuleLoader.java:313) ~[bin/:na]
+	at net.floodlightcontroller.core.module.FloodlightModuleLoader.loadModulesFromList(FloodlightModuleLoader.java:287) ~[bin/:na]
+	at net.floodlightcontroller.core.module.FloodlightModuleLoader.loadModulesFromConfig(FloodlightModuleLoader.java:235) ~[bin/:na]
+	at net.floodlightcontroller.core.Main.main(Main.java:61) ~[bin/:na]
+
+
+
+The following updates is able to counter the errors:
+1. Use OpenJDK7
+2. Download the Floodlightv1.1 : 
+3. MACTracker resolved using the codes in given in this link: https://floodlight.atlassian.net/wiki/plugins/servlet/mobile?contentId=1343513#content/view/1343513
+4. Ethernet.java issue resolved : 
+   
+
+
+
+
+
+
 First, the Floodlight wiki has moved. Please visit us at our new site hosted by Atlassian:
 
 https://floodlight.atlassian.net/wiki/display/floodlightcontroller/Floodlight+Documentation
